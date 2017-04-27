@@ -699,5 +699,3 @@ data class FirstLastLink(var first: DLink? = null, var last: DLink? = null) {
 选择排序 | O（N²） | 差
 插入排序 | O（N²） | 差 > 冒泡
 链表 | O（N） | 插入快，查找和删除慢
-
-
