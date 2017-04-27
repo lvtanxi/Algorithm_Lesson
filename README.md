@@ -59,7 +59,7 @@ object OrderArrayTest {
      */
     fun binarySearch(array: IntArray, vaule: Int): Int {
         var low = 0
-        var high = array.size - 1
+        var high = array.lastIndex
         var middle: Int
         while (low <= high) {
             middle = (low.plus(high)).div(2)
