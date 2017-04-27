@@ -344,15 +344,15 @@ class PriorityQueue {
 
 读取元素 | 输出字符串| 栈
 ---|---|---
-A | A | 
-+ | A | +
-B | AB | +
-* | AB | +*
-( | AB | +*(
-C | ABC | +*(
-- | ABC | +*(-
-D | ABCD | +*(-
-) | ABCD- | +*(
+&nbsp;A | A | &nbsp;
+&nbsp;+ | A | +
+&nbsp;B | AB | +
+&nbsp;* | AB | +*
+&nbsp;( | AB | +*(
+&nbsp;C | ABC | +*(
+&nbsp;- | ABC | +*(-
+&nbsp;D | ABCD | +*(-
+&nbsp;) | ABCD- | +*(
 &nbsp; | ABCD- | +*
 &nbsp;| ABCD-* | +
 &nbsp;| ABCD-*+ | 
