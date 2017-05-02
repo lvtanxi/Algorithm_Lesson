@@ -3,7 +3,7 @@ package com.lv.lesson13
 /**
  * Date: 2017-04-27
  * Time: 16:15
- * Description:
+ * Description: 双端链表
  */
 class PFirstLastList {
     var first: PLink? = null
