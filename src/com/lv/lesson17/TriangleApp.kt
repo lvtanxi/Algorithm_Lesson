@@ -11,16 +11,23 @@ import java.io.InputStreamReader
 object TriangleApp {
     @JvmStatic
     fun main(args: Array<String>) {
-        var num = getNum()
-        num = triangle(num)
-        println(num)
+        val num = getNum()
+        var result = triangle(num)
+        println(result)
+        result= triangle2(num)
+        println(result)
         multiplicationTable(9)
+        println()
+        multiplicationTable2(9)
     }
 
     fun triangle(num: Int): Int {
         if (num == 1)
             return 1
         return num.plus(triangle(num.minus(1)))
+    }
+    fun triangle2(num: Int): Int {
+        return (0..num).sum()
     }
 
     fun multiplicationTable(num: Int) {
@@ -39,6 +46,22 @@ object TriangleApp {
             multiplicationTable(num.minus(1))
         }
     }
+
+
+    fun multiplicationTable2(num: Int) {
+        val sp = StringBuilder()
+       for (i in 1..num){
+           for (j in 1..i){
+               sp.setLength(0)
+               sp.append("$j * $i = ${i * j} ")
+               if (sp.length < 11)
+                   sp.append(" ")
+               print(sp)
+           }
+           println()
+       }
+    }
+
 
 
     fun getNum(): Int {
